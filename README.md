@@ -17,7 +17,7 @@ Windows : <code>powershell -c "irm bun.sh/install.ps1 | iex"</code><br>
 ## II. Flutter Section
 <p>
 1.  You need Flutter tools installed on your system. Follow the installation guide <a href="https://docs.flutter.dev/get-started/install">here</a> based on your operating system.<br>
-2. After done installing Flutter. Clone this other repository: <code>github.com/arifdata/flutter_phaser</code><br>
+2. After done installing Flutter. Clone this other repository: <code>git clone github.com/arifdata/flutter_phaser</code><br>
 3. Change dir into newly cloned repository: <code>cd flutter_phaser</code><br>
 4. Install the dependency: <code>flutter pub get</code><br>
 5. Copy all the content of "dist" folder from step 6 previous section into the "assets" folder so the project structure looks like this:<br>
