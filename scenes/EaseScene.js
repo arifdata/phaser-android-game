@@ -75,7 +75,7 @@ export default class EaseScene extends Phaser.Scene {
         });
         
         this.input.once("pointerdown", () => {
-            this.scene.start("TestScene");
+            this.scene.start("AudioScene");
         }, this);
 
 	}

@@ -35,7 +35,7 @@ export default class ParticleSceneNoFX extends Phaser.Scene {
 	}
 
 	update() {
-        this.logo.rotation += 0.05;
+        this.logo.rotation -= 0.05;
 
 	}
 

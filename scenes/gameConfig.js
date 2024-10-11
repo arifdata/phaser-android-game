@@ -4,6 +4,7 @@ import ParticleScene from './ParticleScene';
 import ParticleSceneNoFX from './ParticleSceneNoFX';
 import CardScene from './CardScene';
 import EaseScene from './EaseScene';
+import AudioScene from './AudioScene';
 
 export default {
 	type: Phaser.AUTO,
@@ -23,5 +24,5 @@ export default {
 		}
 	},
 	title: "Phaser Android Game",
-	scene: [TestScene, ParticleScene, ParticleSceneNoFX, CardScene, EaseScene]
+	scene: [TestScene, ParticleScene, ParticleSceneNoFX, CardScene, EaseScene, AudioScene]
 };
