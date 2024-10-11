@@ -12,7 +12,7 @@ export default class CardScene extends Phaser.Scene {
 	}
 	
 	create(){
-		const testText = this.add.text(10, 10, "Upper Left", {fontSize: "32px", fontStyle: "bold"});
+		const testText = this.add.text(10, 10, "CardScene Shine Effect", {fontSize: "32px", fontStyle: "bold"});
         const card = this.add.plane(this.sys.scale.width / 2, this.sys.scale.height / 2, 'card');
         card.setScale(2);
         

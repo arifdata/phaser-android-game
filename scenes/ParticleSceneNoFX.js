@@ -2,9 +2,9 @@ import Phaser from 'phaser';
 import star from '/assets/star3.png';
 
 
-export default class ParticleScene extends Phaser.Scene {
+export default class ParticleSceneNoFX extends Phaser.Scene {
 	constructor(){
-		super({key: "ParticleScene"});
+		super({key: "ParticleSceneNoFX"});
 	}
 	
 	preload(){
@@ -12,7 +12,7 @@ export default class ParticleScene extends Phaser.Scene {
 	}
 	
 	create(){
-		    this.testText = this.add.text(10, 10, "Particle & BokehFX", {fontSize: "32px", fontStyle: "bold"});
+		    this.testText = this.add.text(10, 10, "Only Particle", {fontSize: "32px", fontStyle: "bold"});
         const emitter = this.add.particles(640, 360, 'star', {
             angle: { min: 240, max: 300 },
             speed: { min: 200, max: 300 },
@@ -24,11 +24,12 @@ export default class ParticleScene extends Phaser.Scene {
         });
 
         emitter.particleBringToTop = false;
-        const fx = emitter.postFX.addBokeh(0.5, 10, 0.2);
+        // const fx = emitter.postFX.addBokeh(0.5, 10, 0.2);
         this.logo = this.add.image(640, 360, 'logo').setOrigin(0);
+        // this.logo.postFX.addBokeh(0.5, 10, 0.2);
         
         this.input.once("pointerdown", () => {
-            this.scene.start("ParticleSceneNoFX");
+            this.scene.start("CardScene");
         }, this);
 
 	}

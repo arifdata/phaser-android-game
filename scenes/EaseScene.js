@@ -12,6 +12,7 @@ export default class EaseScene extends Phaser.Scene {
 	}
 	
 	create(){
+		    this.testText = this.add.text(10, 10, "Easing", {fontSize: "32px", fontStyle: "bold"});
         var eases = [
             'Linear',
             'Quad.easeIn',
