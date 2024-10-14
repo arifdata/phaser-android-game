@@ -29,7 +29,7 @@ export default class AudioScene extends Phaser.Scene {
     });
         
     this.input.once("pointerdown", () => {
-        this.scene.start("TestScene");
+        this.scene.start("TweenScene");
         music.stop();
     }, this);
 
